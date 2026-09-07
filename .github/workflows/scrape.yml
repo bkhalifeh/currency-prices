@@ -2,7 +2,9 @@ name: scrape-derham-prices
 
 on:
   schedule:
-    - cron: "35 * * * *"   # a few minutes after the channel's ~:30 UTC post
+    # GitHub drops scheduled ticks under load, so fire every 15 min and let the
+    # dedup (INSERT OR IGNORE on post id) + no-op commit absorb the extra runs.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
