@@ -9,6 +9,13 @@ The most recent price message is parsed and written to [`latest.json`](latest.js
 یوآن چین (`cny`), لیر ترکیه (`try`), plus the post's `ساعت` label (Tehran local
 time) and its UTC `datetime`.
 
+Every reading is also appended to `prices.db`, a SQLite history with one row per
+Telegram post (`post` is the primary key, so re-runs never duplicate):
+
+```sh
+sqlite3 prices.db 'select datetime, time_label, aed, usd, eur from prices order by datetime desc limit 10'
+```
+
 ## Run
 
 ```sh
