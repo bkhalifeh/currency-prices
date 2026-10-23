@@ -1,15 +1,15 @@
 {
   "source": "https://t.me/s/derham_ir",
-  "post": "derham_ir/16874",
-  "post_url": "https://t.me/derham_ir/16874",
-  "datetime": "2026-10-23T10:30:14+00:00",
-  "time_label": "14:00",
-  "fetched_at": "2026-10-23T11:30:35Z",
+  "post": "derham_ir/16875",
+  "post_url": "https://t.me/derham_ir/16875",
+  "datetime": "2026-10-23T11:30:15+00:00",
+  "time_label": "15:00",
+  "fetched_at": "2026-10-23T12:00:45Z",
   "prices": {
     "aed": 74660,
-    "eur": 307100,
+    "eur": 307000,
     "usd": 274200,
-    "gbp": 363300,
+    "gbp": 363000,
     "cny": 41200,
     "try": 5600
   }
